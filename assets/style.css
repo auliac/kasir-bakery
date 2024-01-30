@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #f8f8f8;
+    color: black;
+    margin-top: 20px;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section {
+    padding: 10px 0;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 30px 0 50px;
+    width: 100%;
+}
+
+.box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.col-4 {
+    width: 25%;
+    height: auto;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.col-4:hover {
+    box-shadow: 0 0 3px #999;
+}
+
+.col-4 img {
+    width: 150px;
+    height: 150px;
+}
+
+.col-4 .nama {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.col-4 .harga {
+    font-weight: bold;
+    color: #C70039;
+    float: left;
+}
+
+.col_4 {
+    width: 25%;
+    height: auto;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    /* margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 65px; */
+    margin: 0 0 10px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.col_4:hover {
+    box-shadow: 0 0 3px #999;
+}
+
+.col_4 img {
+    width: 150px;
+    height: 150px;
+}
+
+.col_4 .nama {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.col_4 .harga {
+    font-weight: bold;
+    color: #C70039;
+    float: left;
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: #3BB143;
+    color: #fff;
+    border: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.duabtn {
+    padding: 8px 15px;
+    background-color: #3BB143;
+    color: #fff;
+    border: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #2c8e33;
+}
+
+.input {
+    width: auto;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.input-search {
+    margin-top: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+.btn-add {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #3BB143;
+    margin: 0 0 10px 0;
+    padding: 5px 0 5px 0;
+    align-items: center;
+    display: flex;
+    border: transparent;
+    border-radius: 5px;
+    justify-content: center;
+    transition: 0.2s all;
+}
+
+.btn-add:hover {
+    background-color: #2c8e33;
+}
+
+.kiri {
+    display: flex;
+}
+
+.kiri_produk {
+    margin: 0 10px 0 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.kanan {
+    width: 40%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 30px 0 280vh 25px;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.block {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* Letakkan elemen ke sisi kanan dan kiri */
+    width: 100%;
+    /* Clear the float */
+}
+
+.block a {
+    display: inline-block;
+}
+
+.block .btn-edit {
+    float: right;
+    /* Float the edit link to the right */
+    margin-left: 10px;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.h4 {
+    text-align: center;
+}
+
+.pesanan {
+    font-family: 'Segoe UI';
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pesanan td,
+th {
+    /* border: 1px solid #3BB143; */
+    padding: 8px;
+}
+
+.pesanan tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pesanan tr:hover {
+    background-color: #ddd;
+}
+
+.pesanan th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: #3BB143;
+    color: white;
+}
+
+.form {
+    width: 300px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.panel_login {
+    width: 400px;
+    background: white;
+    /* meletakkan form ke tengah */
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px 20px;
+    box-shadow: 0px 0px 100px 4px #d6d6d6;
+    border-radius: 3px;
+}
+
+.form_login {
+    /* membuat lebar form penuh */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+
+.tombol_login {
+    background: #04AA6D;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.h1_regist {
+    margin-top: 60px;
+    text-align: center;
+    /* ketebalan font */
+    font-weight: 100;
+}
+
+.tulisan_atas {
+    text-align: center;
+    /* membuat huruf menjadi kapital */
+    text-transform: uppercase;
+}
+
+.col-4 .harga_produk {
+    font-weight: bold;
+    color: #3BB143;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.block_edit {
+    display: flex;
+    justify-content: space-between;
+    /* Letakkan elemen ke sisi kanan dan kiri */
+    width: 100%;
+}
